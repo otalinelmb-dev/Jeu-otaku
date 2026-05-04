@@ -108,3 +108,4 @@ function gameOver() {
     alert("INFRACTIONS TROP NOMBREUSES. SCORE FINAL : " + score);
     location.reload();
 }
+.
