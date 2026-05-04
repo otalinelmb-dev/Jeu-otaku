@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>OTAKU GENESIS | IA SYSTEM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-ui">
+        <header>
+            <div class="stats">SCORE: <span id="score">0</span> | VIES: <span id="lives">❤️❤️❤️</span></div>
+            <div class="dev-tag">CORE-IA : LMB-SYS ACTIVE</div>
+        </header>
+
+        <main id="quiz-container">
+            <div id="start-screen">
+                <h1 class="neon-title">OTAKU GUESS</h1>
+                <p>CONTRÔLE TOTAL PAR INTELLIGENCE ARTIFICIELLE</p>
+                <button id="start-game-btn">INITIALISER L'IA</button>
+            </div>
+
+            <div id="question-box" class="hidden">
+                <div class="hint-box">
+                    <p id="hint">Initialisation des serveurs...</p>
+                </div>
+                <input type="text" id="answer-input" placeholder="Analyse de ta réponse..." autocomplete="off">
+                <button id="submit-btn">VALIDER</button>
+            </div>
+        </main>
+        
+        <footer>ENCRYPTED BY JEFFREY LMB</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
