@@ -1,0 +1,89 @@
+:root {
+    --otaku-gold: #ffcc00;
+    --neon-blue: #00f2ff;
+    --blood-red: #ff003c;
+    --dark: #0a0a0a;
+}
+
+body {
+    background-color: var(--dark);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#game-ui {
+    width: 100%;
+    max-width: 400px;
+    height: 90vh;
+    border: 1px solid var(--neon-blue);
+    background: linear-gradient(180deg, rgba(0,242,255,0.05) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+}
+
+header {
+    border-bottom: 1px solid var(--neon-blue);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.stats { font-size: 1.1em; text-shadow: 0 0 5px var(--neon-blue); }
+.dev-tag { font-size: 0.6em; color: var(--neon-blue); letter-spacing: 3px; margin-top: 5px; }
+
+.neon-title {
+    color: var(--otaku-gold);
+    text-shadow: 0 0 15px var(--blood-red);
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.hint-box {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 3px solid var(--neon-blue);
+    padding: 20px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    background: #000;
+    border: 1px solid #333;
+    color: var(--neon-blue);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+input:focus { border-color: var(--neon-blue); outline: none; }
+
+button {
+    width: 100%;
+    padding: 18px;
+    background: var(--neon-blue);
+    color: #000;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover { background: var(--otaku-gold); }
+
+.hidden { display: none; }
+footer { margin-top: auto; font-size: 0.7em; opacity: 0.4; text-align: center; letter-spacing: 2px; }
